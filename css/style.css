@@ -1,6 +1,6 @@
 *,
 *:after,
-*:before: {
+*:before:{
     box-sizing: inherit;
 }
 
@@ -33,6 +33,7 @@ h1 {
 h2 {
     font-weight: 400;
     margin: 0;
+    font-size: 16px; /**/
 }
 
 .header {
@@ -76,7 +77,7 @@ h2 {
     padding: 0.5em 0;
 }
 
-.menu-hidden .slide-menu {
+.menu-hidden .slide-menu { /*hidden: .menu-hidden */
     transform: translate3d(-12em, 0, 0);
     transition: transform 0.2s;
 }
@@ -87,6 +88,6 @@ h2 {
 
 .entry {
     border-bottom: 1px solid #ddd;
-    padding: 1em;
-    margin: 0.5em 0;
+    padding: 0; /**/
+    margin: 0; /**/
 }
