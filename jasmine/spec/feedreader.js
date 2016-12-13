@@ -66,7 +66,6 @@ $(function () {
     });
 
 
-
     describe('New Feed Selection', function () {
 
         /* Ensures when a new feed is loaded by the loadFeed function that the content actually changes.*/
@@ -75,13 +74,12 @@ $(function () {
         beforeEach(function (done) {
             loadFeed(0, function () {
                 beforeResults = $(".feed").text();
+                loadFeed(1, done);
             });
-            loadFeed(1, done);
         });
 
         it('changes the content', function () {
          expect($(".feed").text()).not.toEqual(beforeResults);
-
         });
     }
     );
